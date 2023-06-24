@@ -11,7 +11,7 @@ def calcular_calorias(valor1, valor2, valor3)
   calorias = 4 * (valor1 + valor2) + 9 * valor3
 end
 
-puts("***¡Bienvenido/a al sistema de cálculode calorias!***")
+puts("***¡Bienvenido/a al sistema de cálculo de calorias!***")
 puts "Ingrese los gr de proteina:"
 proteinas = gets.chomp.to_f
 puts "Ingrese los carbohidratos:"
