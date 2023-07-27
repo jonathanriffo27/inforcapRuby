@@ -20,16 +20,14 @@ class Person
     @age += 1
   end
 
-  def talk
-  end
+  def talk; end
 
-  def introduce
-  end
+  def introduce; end
 end
 
 class Student < Person
   def talk
-    puts "Aquí es la clase de programación con Ruby?"
+    puts 'Aquí es la clase de programación con Ruby?'
   end
 
   def introduce
@@ -39,7 +37,7 @@ end
 
 class Teacher < Person
   def talk
-    puts "Bienvenidos a la clase de programación con Ruby!"
+    puts 'Bienvenidos a la clase de programación con Ruby!'
   end
 
   def introduce
@@ -49,10 +47,22 @@ end
 
 class Parent < Person
   def talk
-    puts "Aquí es la reunión de apoderados?"
+    puts 'Aquí es la reunión de apoderados?'
   end
 
   def introduce
     puts "Hola. Soy uno de los apoderados. Mi nombre es #{first_name} #{last_name}."
   end
 end
+
+fernando = Student.new('Fernando', 'Contreras', 23)
+puts fernando.talk
+puts fernando.introduce
+
+sebastian = Teacher.new('Sebastian', 'Alegria', 43)
+puts sebastian.talk
+puts sebastian.introduce
+
+cecilia = Parent.new('Cecilia', 'Miranda', 33)
+puts cecilia.talk
+puts cecilia.introduce
